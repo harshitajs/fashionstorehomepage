@@ -30,7 +30,9 @@ function animateValue(start, end, incrm, duration, elem) {
 
   // Open the Mobile Navigation
   document.querySelector(".mobile-menu").addEventListener("click", function(){
-    document.querySelector(".mobile-nav").classList.toggle("mobile-nav-close");
+    if ( document.querySelector(".mobile-nav").classList.contains('mobile-nav-close')) {
+      document.querySelector(".mobile-nav").classList.toggle("mobile-nav-close");
+    }
     document.querySelector(".mobile-nav").classList.toggle("mobile-nav-open");       
   });
 
