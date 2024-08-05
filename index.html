@@ -3,12 +3,18 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   
+    <!-- Custom Font Link -->
     <link href="https://api.fontshare.com/v2/css?f[]=satoshi@400&display=swap" rel="stylesheet">
+
+    <!-- Font Awsome Library -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
+    <!-- Slick Slider CSS Files-->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.css" integrity="sha512-yHknP1/AwR+yx26cB1y0cjvQUMvEa2PFzt1c9LlS4pRQ5NOTZFWbhBig+X9G9eYW/8m0/4OXNx8pxJ6z57x0dw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.min.css" integrity="sha512-17EgCFERpgZKcm0j0fEq1YCJuyAWdz9KUtv1EjVuaOz8pDnh/0nZxmU6BBXwaaxqoi9PQXnRWqlcDB027hgv9A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
   
+    <!-- Custom CSS File -->
     <link rel="stylesheet" href="./style.css">
     <title>Document</title>
 </head>
@@ -22,11 +28,30 @@
     </section>
 
     <section class="header">
-        <div class="wrapper">       
+        <nav class="mobile-nav mobile-nav-close">
+            <i class="fa fa-times fa-lg mobile-nav-close-btn" aria-hidden="true"></i>
+            <div class="mobile-nav-content">
+                <ul>     
+                    <li>
+                        <a href="#">Shop</a><i class="fa fa-angle-down" aria-hidden="true"></i>
+                    </li>                   
+                    <li>
+                        <a href="#">On Sale</a>
+                    </li>
+                    <li>
+                        <a href="#">New Arrivals</a>
+                    </li>
+                    <li>
+                        <a href="#">Brands</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>       
+        <div class="wrapper">
             <div class="desktop-header-container">
                 <div class="mobile-menu">
-                    <img src="./images/mobile-menu.png" alt="" />
-                </div>
+                    <img src="./images/mobile-menu.png" alt="" />                    
+                </div>                
                 <div class="logo">
                     <img src="./images/dummylogo1.png" alt="" />
                 </div>    
@@ -45,7 +70,7 @@
                             <a href="#">Brands</a>
                         </li>
                     </ul>
-                </nav>
+                </nav>                
     
                 <div class="search-bar">
                     <form action="#">
@@ -63,7 +88,7 @@
         </div> 
     </section>
     
-    <section class="hero-banner">        
+    <section class="hero-banner">
             <div class="wrapper hero-container">
                 <div class="hero-text">
                     <h1>FIND CLOTHES <br> THAT MATCHES <br> YOUR STYLE</h1>
@@ -455,7 +480,6 @@
                         </div>
                     </div>
                     <div class="footer-link">
-                        <!-- <div class="footer-ul-sub1"> -->
                             <ul class="footer-ul-1 footer-ul">
                                 <li>
                                     Company
@@ -490,8 +514,6 @@
                                     <a href="#">Privacy Policy</a>
                                 </li>
                             </ul>
-                        <!-- </div> -->
-                        <!-- <div class="footer-ul-sub2"> -->
                         <ul class="footer-ul-3 footer-ul">
                             <li>
                                 Faq
@@ -526,7 +548,6 @@
                                 <a href="#">Youtube Playlist</a>
                             </li>
                         </ul>   
-                        <!-- </div> -->
                     </div>            
                 </div>
                 <div class="footer-end">
@@ -541,12 +562,15 @@
                 </div>
             </div>
     </section>
-</div> 
+</div>  
 
-
+<!-- JQuery and Slick Slider JS Files -->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-migrate/3.5.2/jquery-migrate.min.js" integrity="sha512-BzvgYEoHXuphX+g7B/laemJGYFdrq4fTKEo+B3PurSxstMZtwu28FHkPKXu6dSBCzbUWqz/rMv755nUwhjQypw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js" integrity="sha512-HGOnQO9+SP1V92SrtZfjqxxtLmVzqZpjFFekvzZVWoiASSQgSr4cw9Kqd2+l8Llp4Gm0G8GIFJ4ddwZilcdb8A==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+<!-- Custom JS File -->
+<script src="./main.js"></script>
 
 <script type="text/javascript">
     $(document).ready(function(){
@@ -608,6 +632,5 @@
 
     });
 </script>
-<script src="./main.js"></script>
 </body>
 </html>

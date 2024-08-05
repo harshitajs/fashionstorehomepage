@@ -17,8 +17,25 @@ function animateValue(start, end, incrm, duration, elem) {
     }, stepTime);
   }
   
-  // Start the animation
-  
+  // Start the counter  
   animateValue(0, 200, 10, 3000, counterBox1);
   animateValue(0, 2000, 50, 3000, counterBox2);
   animateValue(0, 30000, 500, 5000, counterBox3);
+
+
+  // Close the announcement bar
+  document.querySelector('.announcement-close').addEventListener("click", function() {
+    this.parentElement.parentElement.classList.toggle("disable-announcement");
+  });
+
+  // Open the Mobile Navigation
+  document.querySelector(".mobile-menu").addEventListener("click", function(){
+    document.querySelector(".mobile-nav").classList.toggle("mobile-nav-close");
+    document.querySelector(".mobile-nav").classList.toggle("mobile-nav-open");       
+  });
+
+  // Close the Mobile Navigation
+  document.querySelector(".mobile-nav-close-btn").addEventListener("click", function(){
+    this.parentElement.classList.toggle("mobile-nav-open");
+    this.parentElement.classList.toggle("mobile-nav-close");    
+  });
